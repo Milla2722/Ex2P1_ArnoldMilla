@@ -14,7 +14,7 @@ static Items OBJ = new Items();
     
     public static void main(String[] args) {
         char continuar = 's';
-        int cuartos = 4;
+        int cuartos = 20;
         int contador = 0;
         int Hpeartles = 75;
         int Ateartles = 25;
