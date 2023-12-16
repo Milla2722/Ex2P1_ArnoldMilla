@@ -190,8 +190,7 @@ static Items OBJ = new Items();
                                         if (character.equals(Party.get(cont).Nombre)){
                                             for (int tnoc = 0; tnoc < Items.size(); tnoc++) {
                                                 System.out.println(tnoc + ".- " + Items.get(tnoc).toString());
-                                                if (Items.size() - 1 < 0){
-                                                    System.out.println("Te has quedado sin items");
+                                                if (Items.size() == 0){
                                                     break;
                                                 }
                                             }
@@ -213,6 +212,11 @@ static Items OBJ = new Items();
                                                                                        
                                             Personaje p2 = new Personaje(character, vida, mana, dmg, df2);
                                             Party.set(cont, p2);
+                                        }
+                                        if (Items.size() == 0){
+                                            System.out.println("");
+                                            System.out.println("Te has quedado sin items");
+                                            break;
                                         }
                                     }
                                     System.out.println("");
